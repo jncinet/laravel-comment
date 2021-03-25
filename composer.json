@@ -18,13 +18,13 @@
   },
   "autoload": {
     "psr-4": {
-      "Jncinet\\LaraverComment\\": "src/"
+      "Jncinet\\LaravelComment\\": "src/"
     }
   },
   "extra": {
     "laravel": {
       "providers": [
-        "Jncinet\\LaraverComment\\CommentServiceProvider"
+        "Jncinet\\LaravelComment\\CommentServiceProvider"
       ]
     }
   }
