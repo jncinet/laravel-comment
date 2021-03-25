@@ -6,11 +6,20 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Jncinet\LaravelComment\Events\CreatedComment;
 use Jncinet\LaravelComment\Events\DeletedComment;
+use Overtrue\LaravelLike\Traits\Likeable;
 
 class Comment extends Model
 {
+    use Likeable;
+
+    /**
+     * @var array
+     */
     protected $guarded = [];
 
+    /**
+     * @var array
+     */
     protected $dispatchesEvents = [
         'created' => CreatedComment::class,
         'deleted' => DeletedComment::class,
