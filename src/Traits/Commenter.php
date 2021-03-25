@@ -15,7 +15,7 @@ trait Commenter
     {
         return $this->hasMany(
             config('comment.comment_model'),
-            config('comment.user_foreign_key'),
+            'user_id',
             $this->getKeyName()
         );
     }
